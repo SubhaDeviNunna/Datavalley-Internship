@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Customer Information Form</title>
+</head>
+<body>
+  <h2>Customer Information Form</h2>
+  <form id="customerForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="phone">Contact Phone No:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+    
+    <label for="preferredDays">Preferred Days of Purchasing:</label><br>
+    <input type="text" id="preferredDays" name="preferredDays"><br>
+    
+    <label for="favoriteItem">Favorite Item:</label><br>
+    <select id="favoriteItem" name="favoriteItem">
+      <option value="groceries">Groceries</option>
+      <option value="clothing">Clothing</option>
+      <option value="electronics">Electronics</option>
+      <option value="homeGoods">Home Goods</option>
+    </select><br>
+    
+    <label for="suggestions">Suggestions:</label><br>
+    <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br>
+    
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
